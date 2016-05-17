@@ -5,6 +5,5 @@
   "dependencies": {
     "body-parser": "^1.15.1",
     "express": "3.x"
-  },
-  "start": "node app.js"
+  }
 }
