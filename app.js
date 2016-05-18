@@ -2,7 +2,7 @@ var express    = require('express');
 var bodyParser = require('body-parser');
 var app = express();
 
-app.use(express.bodyParser());
+app.use(bodyParser());
 
 app.use(function (req, res, next) {
 
@@ -45,4 +45,6 @@ app.delete('/:id', function(req, res) {
   res.json(true);
 })
 
-app.listen(process.env.PORT || 3000);
+app.listen(process.env.PORT || 3000, function() {
+  console.log('Server running on port 3000.');;
+});
